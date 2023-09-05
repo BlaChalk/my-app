@@ -40,7 +40,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='flex flex-col justify-center items-center w-screen'>
+      <div className='flex flex-col justify-center items-center'>
         <div className=' text-9xl'>
           DIGITAL
         </div>
@@ -49,6 +49,28 @@ export default function Home() {
         </div>
         <div className='text-3xl'>
         WE’RE ON A MISSION TO MAKE THE WORLD LOOK BETTER.
+        </div>
+      </div>
+
+      <div className='flex flex-col mt-80'>
+        <div className='relative'>
+          <Image 
+            src="https://assets.website-files.com/60e4912ee7c15fb303f4c588/63fcc99b76ed7aef6b6bdae1_about-better.webp"
+            className='rounded-2xl'
+            width={500}
+            height={500}
+            alt="" 
+          />
+          <div className='absolute top-1/2 -translate-y-24 -right-44'>
+            <svg width="235" height="277" viewBox="0 0 235 277" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M63.2357 32.4978C92.7292 46.8703 122.826 70.1375 131.386 103.472C136.856 124.775 127.49 150.722 108.862 162.539C91.2693 173.699 68.7682 177.599 52.1883 163.003C43.5462 155.395 39.3438 144.96 45.5264 134.326C54.9721 118.078 81.4419 115.263 97.8733 118.527C149.153 128.716 197.946 171.453 212.659 221.871" stroke="#111111" stroke-width="4" stroke-linecap="round"></path>
+              <path d="M219.888 183.294C219.185 192.445 216.936 213.283 213.558 223.42" stroke="#111111" stroke-width="4" stroke-linecap="round"></path>
+              <path d="M213.558 223.42C205.814 218.493 187.791 207.796 177.654 204.419" stroke="#111111" stroke-width="4" stroke-linecap="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div className='text-9xl'>
+          BREAK
         </div>
       </div>
 
