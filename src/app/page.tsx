@@ -74,6 +74,26 @@ export default function Home() {
         </div>
       </div>
 
+      <div className='h-40'></div>
+
+      <div className='flex'>
+        <div className='flex flex-1 flex-col text-sm'>
+          <div>Starting</div>
+          <div>From Scratch</div>
+        </div>
+        <div className='flex flex-1 flex-col text-3xl'>
+          <p>
+            <span className='ml-96'>In</span>
+            <span> 2008, Marc and Jason Debiak had a realization — “everything around us is ugly.” Designs were thrown together haphazardly, brands were barely scratching the surface of what was possible, and, at the end of the day, the world just needed to look better.</span>
+          </p>
+          <br />
+          <br />
+          <p>
+            <span className='ml-96'>As</span>
+            <span> luck would have it, they were the pair positioned to fix it. As punk rock music professionals, they’d spent careers building bands with rockstar promise but shoestring budgets, leading to a DIY, nothing-is-impossible mentality that focused on bringing out what made bands different.</span>
+          </p>
+        </div>
+      </div>
 
       {/* <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
