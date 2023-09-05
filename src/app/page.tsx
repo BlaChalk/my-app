@@ -59,7 +59,7 @@ export default function Home() {
           <div>Starting</div>
           <div>From Scratch</div>
         </div>
-        <div className='flex flex-1 flex-col text-3xl'>
+        <div className='flex flex-1 flex-col ml-20 text-xl'>
           <p>
             <span className='ml-96'>In</span>
             <span> 2008, Marc and Jason Debiak had a realization — “everything around us is ugly.” Designs were thrown together haphazardly, brands were barely scratching the surface of what was possible, and, at the end of the day, the world just needed to look better.</span>
@@ -75,35 +75,60 @@ export default function Home() {
 
       <div className='flex flex-col mt-2'>
         <div className='flex flex-col font-PtypeDisplay'>
-            <h3 className='text-6xl'>NOT</h3>
-            <h3 className='text-6xl'>MUCH</h3>
+            <div className='text-6xl'>NOT</div>
+            <div className='text-6xl'>MUCH</div>
         </div>
         <div className='flex justify-between'>
           <div className='flex flex-1 flex-col'>
             <div className='relative'>
               <Image 
                 src="https://assets.website-files.com/60e4912ee7c15fb303f4c588/63f8f8749480ed5f4b9c5e46_notmuch-haschanged.webp"
-                className='rounded-2xl'
+                className='rounded-2xl w-full'
                 width={500}
                 height={500}
                 alt="" 
               />
             </div>
           </div>
-          <div className='flex flex-1 flex-col items-end'>
+          <div className='flex flex-1 flex-col items-end ml-10'>
             <div className='flex flex-1 flex-col items-end font-PtypeDisplay'>
-              <h3 className='text-6xl'>HAS</h3>
-              <h3 className='text-6xl'>CHANGED</h3>
+              <div className='text-6xl'>HAS</div>
+              <div className='text-6xl'>CHANGED</div>
             </div>
             <div>
-              <span className='ml-96 text-3xl'>Our</span>
-              <p className='text-3xl'> processes might be stronger, our team of visionary talent may be bigger, but one thing remains the same. Our mission is to discover and create new. Whether it’s a vision for design that’s never been seen, a new way of telling stories that have never been told, or embracing the latest tech to blow the limits of what’s possible sky-high, we’re always taking the road less traveled to help brands break through the noise.</p>
+              <span className='ml-96 text-xl'>Our</span>
+              <span className='text-xl'> processes might be stronger, our team of visionary talent may be bigger, but one thing remains the same. Our mission is to discover and create new. Whether it’s a vision for design that’s never been seen, a new way of telling stories that have never been told, or embracing the latest tech to blow the limits of what’s possible sky-high, we’re always taking the road less traveled to help brands break through the noise.</span>
               <br />
               <br />
-              <span className='ml-96 text-3xl'>So</span>
-              <p className='text-3xl'> you can find us at the intersection of invention and design, on the edge of what we know and what we still have to learn, exploring the places no one else has thought to look.</p>
+              <span className='ml-96 text-xl'>So</span>
+              <span className='text-xl'> you can find us at the intersection of invention and design, on the edge of what we know and what we still have to learn, exploring the places no one else has thought to look.</span>
             </div>
           </div>
+        </div>
+      </div>
+      
+      <div className='relative flex flex-col items-center mt-40'>
+        <div className='text-6xl font-PtypeDisplay'>THATS</div>
+        <div className='text-6xl font-PtypeDisplay'>WHERE ALL</div>
+        <div className='text-6xl font-PtypeDisplay'>THE BAD</div>
+        <div className='flex'>
+          <div className='text-6xl font-PtypeDisplay'>SH</div>
+          <div className='ml-20 text-6xl font-PtypeDisplay'>T</div>
+        </div>
+        <div className='text-6xl font-PtypeDisplay'>HAPPENS,</div>
+        <div className='text-6xl font-PtypeDisplay'>ANYWAY</div>
+        <div className='absolute top-1/2 -translate-y-40 right-14'>
+          <svg width="227" height="127" viewBox="0 0 227 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 18.125C46.9413 15.5787 89.3324 12.3999 131.587 9.00198C157.392 6.92675 189.534 3 218.59 3C229.063 3 188.541 10.319 184.365 11.1027C161.525 15.3882 142.087 19.3042 126.469 24.6071C97.5855 34.4141 57.6038 42.9567 27.3099 52.5764C18.0053 55.531 82.2907 52.4418 88.7243 52.2163C113.5 51.3478 194.367 44.4241 217.951 47.8948C257.639 53.7358 89.5875 70.8837 75.2899 72.3829C42.6409 75.8064 110.272 76.4513 123.59 77.6047C171.453 81.7498 151.412 98.7307 139.903 105.874C134.888 108.987 117.787 114.635 129.667 117.878C141.065 120.989 175.47 122.482 193.001 124" stroke="#FF3C31" stroke-width="6" stroke-linecap="round"></path>
+          </svg>
+        </div>
+        <div className='absolute top-1/2 -translate-y-36 -right-56 -rotate-20 text-3xl text-accent font-Quakerhack'>GOOD</div>
+        <div className='absolute top-1/2 translate-y-20 translate-x-12'>
+          <svg width="101" height="110" viewBox="0 0 101 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5544 26.4114C26.8533 37.1127 52.5605 54.2047 68.5028 65.5458C73.3486 68.993 78.1342 72.5146 82.7578 76.2325C83.7253 77.0105 84.6697 77.8011 85.6023 78.6081C86.0123 78.9629 92.521 82.9723 92.122 82.7496C84.704 78.61 70.7595 69.511 63.4814 64.9626C52.8321 58.3073 42.4082 48.8425 33.0725 41.3232C28.9496 38.9383 24.6281 29.4373 20.5958 26.7887" stroke="#FF3C31" stroke-width="6" stroke-linecap="round"></path>
+            <path d="M97.0449 39.4939C78.7376 46.2032 49.6912 56.6579 31.0826 62.6995C25.4265 64.5359 19.7464 66.2796 14.0053 67.7762C12.8039 68.0894 11.6062 68.3766 10.4024 68.6444C9.87313 68.7622 2.77439 71.5987 3.19095 71.411C10.9363 67.9219 26.5537 62.1481 34.5438 59.0151C46.235 54.4308 57.7669 49.6115 69.2034 44.6703C73.5757 42.7813 77.9363 40.8532 82.4664 39.194C83.215 38.9198 85.4485 38.0858 84.6852 38.3242C80.7739 39.5459 76.8941 40.9935 73.011 42.2919" stroke="#FF3C31" stroke-width="6" stroke-linecap="round"></path>
+            <path d="M35.9999 106.606C39.6742 87.4575 46.3566 54.5914 50.7583 35.5283C52.0962 29.734 53.5259 23.9668 55.1988 18.2746C55.5489 17.0835 55.9194 15.9088 56.3096 14.7389C56.4811 14.2246 59.0535 2.65175 58.9999 3.10547C58.0032 11.5417 53.5628 31.9297 52.1348 40.3924C50.0453 52.7753 48.2393 65.1425 46.5868 77.4907C45.9551 82.2116 45.3628 86.9424 44.4528 91.6802" stroke="#FF3C31" stroke-width="6" stroke-linecap="round"></path>
+          </svg>
         </div>
       </div>
 

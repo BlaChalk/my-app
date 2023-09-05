@@ -19,8 +19,14 @@ const config: Config = {
         Quakerhack: 'Quakerhack, sans-serif',
       },
       fontSize: {
+        'xl': ['2rem', {
+          lineHeight: '2rem',
+        }],
+        '3xl': ['8rem', {
+          lineHeight: '8rem',
+        }],
         '6xl': ['16rem', {
-          lineHeight: '16rem',
+          lineHeight: '14rem',
         }],
         '9xl': ['24rem', {
           lineHeight: '20rem',
@@ -29,6 +35,13 @@ const config: Config = {
           lineHeight: '40rem',
         }],
       },
+      colors: {
+        accent: '#ff3c31'
+      },
+      rotate: {
+        '-20': '-20deg',
+      }
+
     },
   },
   plugins: [],
