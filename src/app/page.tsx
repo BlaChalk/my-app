@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-pink-100">
 
       <div className='flex justify-between fixed w-screen top-0 p-8'>
         <div className='w-40 h-40'>
@@ -37,6 +37,18 @@ export default function Home() {
 
         <div>
           Contact Us
+        </div>
+      </div>
+
+      <div className='flex flex-col justify-center items-center w-screen'>
+        <div className=' text-9xl'>
+          DIGITAL
+        </div>
+        <div className='text-9xl'>
+          DESIGN
+        </div>
+        <div className='text-3xl'>
+        WE’RE ON A MISSION TO MAKE THE WORLD LOOK BETTER.
         </div>
       </div>
 
