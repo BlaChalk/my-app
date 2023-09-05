@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'PtypeDisplay';
+  src: url('../fonts/PtypeDisplay.woff');
+}
+
+@font-face {
+  font-family: 'PtypeText';
+  src: url('../fonts/PtypeText.woff');
+}
+
+@font-face {
+  font-family: 'Quakerhack';
+  src: url('../fonts/Quakerhack.ttf');
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
