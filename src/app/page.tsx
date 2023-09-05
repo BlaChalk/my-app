@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-pink-100">
+    <main className="flex min-h-screen flex-col items-center justify-between p-12 bg-pink-100">
 
       <div className='flex justify-between fixed w-screen top-0 p-8'>
         <div className='w-40 h-40'>
@@ -76,7 +76,7 @@ export default function Home() {
 
       <div className='h-40'></div>
 
-      <div className='flex'>
+      <div className='flex pb-12 border-b-2 border-black'>
         <div className='flex flex-1 flex-col text-sm'>
           <div>Starting</div>
           <div>From Scratch</div>
@@ -92,6 +92,38 @@ export default function Home() {
             <span className='ml-96'>As</span>
             <span> luck would have it, they were the pair positioned to fix it. As punk rock music professionals, they’d spent careers building bands with rockstar promise but shoestring budgets, leading to a DIY, nothing-is-impossible mentality that focused on bringing out what made bands different.</span>
           </p>
+        </div>
+      </div>
+
+      <div className='flex flex-col mt-2'>
+        <div className='flex flex-col'>
+            <h3 className='text-6xl'>NOT</h3>
+            <h3 className='text-6xl'>MUCH</h3>
+        </div>
+        <div className='flex justify-between'>
+          <div className='flex flex-1 flex-col'>
+            <div className='relative'>
+              <Image 
+                src="https://assets.website-files.com/60e4912ee7c15fb303f4c588/63f8f8749480ed5f4b9c5e46_notmuch-haschanged.webp"
+                className='rounded-2xl'
+                width={500}
+                height={500}
+                alt="" 
+              />
+            </div>
+          </div>
+          <div className='flex flex-1 flex-col items-end'>
+            <h3 className='text-6xl'>HAS</h3>
+            <h3 className='text-6xl'>CHANGED</h3>
+            <div>
+              <span className='ml-96 text-3xl'>Our</span>
+              <p className='text-3xl'> processes might be stronger, our team of visionary talent may be bigger, but one thing remains the same. Our mission is to discover and create new. Whether it’s a vision for design that’s never been seen, a new way of telling stories that have never been told, or embracing the latest tech to blow the limits of what’s possible sky-high, we’re always taking the road less traveled to help brands break through the noise.</p>
+              <br />
+              <br />
+              <span className='ml-96 text-3xl'>So</span>
+              <p className='text-3xl'> you can find us at the intersection of invention and design, on the edge of what we know and what we still have to learn, exploring the places no one else has thought to look.</p>
+            </div>
+          </div>
         </div>
       </div>
 
