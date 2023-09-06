@@ -1,9 +1,29 @@
+'use client'
 import Image from 'next/image'
 import Header from '@/app/components/Header'
 
 export default function Home() {
+  const handleOnScroll = () => {
+
+    // 計算 section3-img 是否變為浮動圖 
+    const scrollY = window.scrollY
+    const section3OffsetTop = document.getElementById('section3')?.offsetTop || 4000
+    const section4OffsetTop = document.getElementById('section4')?.offsetTop || 5400
+    const el = document.getElementById('section3-img')
+    if (scrollY > section4OffsetTop - 700) {
+      el?.setAttribute('style', 'position: relative; transform: translateY(25rem)')
+    } else if (scrollY > section3OffsetTop + 350) {
+      el?.setAttribute('style', 'position: fixed; top: 4rem; width: 45vw')
+    } else if (scrollY < section3OffsetTop + 350) {
+      el?.setAttribute('style', '')
+    }
+  }
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-12 bg-pink-100 font-PtypeText">
+    <main 
+      className="flex min-h-screen flex-col items-center justify-between p-12 bg-pink-100 font-PtypeText"
+      onWheel={handleOnScroll}
+    >
 
       <Header />
 
@@ -73,14 +93,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='flex flex-col mt-2'>
+      <div id="section3" className='flex flex-col mt-2'>
         <div className='flex flex-col font-PtypeDisplay'>
             <div className='text-6xl'>NOT</div>
             <div className='text-6xl'>MUCH</div>
         </div>
         <div className='flex justify-between'>
           <div className='flex flex-1 flex-col'>
-            <div className='relative'>
+            <div id="section3-img" className='relative'>
               <Image 
                 src="https://assets.website-files.com/60e4912ee7c15fb303f4c588/63f8f8749480ed5f4b9c5e46_notmuch-haschanged.webp"
                 className='rounded-2xl w-full'
@@ -107,7 +127,7 @@ export default function Home() {
         </div>
       </div>
       
-      <div className='relative flex flex-col items-center mt-40'>
+      <div id='section4' className='relative flex flex-col items-center mt-40'>
         <div className='text-6xl font-PtypeDisplay'>THATS</div>
         <div className='text-6xl font-PtypeDisplay'>WHERE ALL</div>
         <div className='text-6xl font-PtypeDisplay'>THE BAD</div>
