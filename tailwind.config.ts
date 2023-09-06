@@ -44,6 +44,15 @@ const config: Config = {
       },
       rotate: {
         '-20': '-20deg',
+      },
+      keyframes: {
+        'marquee-scroll': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        }
+      },
+      animation: {
+        'marquee-scroll': 'marquee-scroll 24s linear infinite'
       }
 
     },

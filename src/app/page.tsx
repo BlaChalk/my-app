@@ -3,6 +3,18 @@ import Image from 'next/image'
 import Header from '@/app/components/Header'
 import CharacterIntro from '@/app/components/CharacterIntro'
 
+function Asterisk() {
+  return (
+    <div className='m-4'>
+      <svg width="111" height="115" viewBox="0 0 111 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.385 25.8912C30.1755 37.5719 58.2355 56.2282 75.6369 68.6072C80.9261 72.3699 86.1497 76.2139 91.1964 80.272C92.2524 81.1212 93.2834 81.9841 94.3012 82.8649C94.7488 83.2522 101.853 87.6286 101.418 87.3856C93.3207 82.8671 78.1 72.9353 70.1559 67.9707C58.532 60.7063 47.154 50.3752 36.9638 42.1677C32.4637 39.5646 27.7467 29.1941 23.3453 26.3031" stroke="#111111" stroke-width="8" stroke-linecap="round"></path>
+        <path d="M106.791 40.1707C86.8081 47.494 55.1034 58.9055 34.7918 65.5001C28.618 67.5045 22.418 69.4078 16.1515 71.0414C14.8402 71.3833 13.5329 71.6967 12.2189 71.9891C11.6412 72.1176 3.89277 75.2137 4.34745 75.0089C12.8016 71.2004 29.8484 64.8983 38.5697 61.4785C51.3309 56.4746 63.9183 51.2142 76.4014 45.8208C81.1739 43.7589 85.9336 41.6544 90.8783 39.8433C91.6953 39.5441 94.1333 38.6337 93.3001 38.894C89.0308 40.2274 84.7959 41.8075 80.5575 43.2247" stroke="#111111" stroke-width="8" stroke-linecap="round"></path>
+        <path d="M40.9121 110.605C44.9226 89.7034 51.4637 56.6484 56.2683 35.8406C57.7286 29.516 59.2892 23.221 61.1152 17.0078C61.4973 15.7077 61.9017 14.4256 62.3276 13.1486C62.5149 12.5872 63.8501 4.35062 63.7916 4.84586C62.7037 14.0542 59.3294 31.9126 57.7707 41.1499C55.49 54.666 53.5187 68.1652 51.7151 81.6435C51.0255 86.7964 50.379 91.9603 49.3857 97.1317" stroke="#111111" stroke-width="8" stroke-linecap="round"></path>
+      </svg>
+    </div>
+  )
+}  
+
 export default function Home() {
   const handleOnScroll = () => {
 
@@ -32,8 +44,17 @@ export default function Home() {
         <div className='text-9xl font-PtypeDisplay'>
           DIGITAL
         </div>
-        <div className='text-9xl font-PtypeDisplay'>
-          DESIGN AGENCY
+        <div className='relative w-screen max-w-full h-96 overflow-hidden'>
+          <div className='absolute flex flex-nowrap items-center text-9xl font-PtypeDisplay will-change-transform animate-marquee-scroll'>
+            <div className='whitespace-nowrap'>DESIGN AGENCY</div>
+            <Asterisk />
+            <div className='whitespace-nowrap'>DESIGN AGENCY</div>
+            <Asterisk />
+            <div className='whitespace-nowrap'>DESIGN AGENCY</div>
+            <Asterisk />
+            <div className='whitespace-nowrap'>DESIGN AGENCY</div>
+            <Asterisk />
+          </div>
         </div>
         <div className='mt-4 text-lg'>
         WE’RE ON A MISSION TO MAKE THE WORLD LOOK BETTER.
