@@ -35,7 +35,7 @@ export default function Home() {
         <div className='text-9xl font-PtypeDisplay'>
           DESIGN AGENCY
         </div>
-        <div className='text-xl'>
+        <div className='mt-4 text-lg'>
         WE’RE ON A MISSION TO MAKE THE WORLD LOOK BETTER.
         </div>
       </div>
