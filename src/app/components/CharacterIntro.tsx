@@ -21,10 +21,19 @@ export default function CharacterIntro({
   containStyle,
   markStyle,
 }: CharacterIntroProps) {
+
+  const handlePlayVideo = (e: React.MouseEvent<HTMLVideoElement>) => {
+    e.currentTarget.play()
+  }
+
+  const handlePauseVideo = (e: React.MouseEvent<HTMLVideoElement>) => {
+    e.currentTarget.pause()
+  }
+
   return (
     <div className='relative flex-1 top-44' style={containStyle}>
       <div className='absolute flex flex-col items-end max-w-sm top-32 left-60'>
-        <video loop className='rounded-md' width="100%" height="auto">
+        <video onMouseEnter={(e) => handlePlayVideo(e)} onMouseLeave={(e) => handlePauseVideo(e)} muted loop className='rounded-md' width="100%" height="auto">
           <source src={videoSource} type="video/mp4" />
         </video>
         <span className='text-end'>{title}</span>
