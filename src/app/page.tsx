@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 import Header from '@/app/components/Header'
+import CharacterIntro from '@/app/components/CharacterIntro'
 
 export default function Home() {
   const handleOnScroll = () => {
@@ -127,7 +128,7 @@ export default function Home() {
         </div>
       </div>
       
-      <div id='section4' className='relative flex flex-col items-center mt-40'>
+      <div id='section4' className='relative flex flex-col items-center my-40'>
         <div className='text-6xl font-PtypeDisplay'>THATS</div>
         <div className='text-6xl font-PtypeDisplay'>WHERE ALL</div>
         <div className='text-6xl font-PtypeDisplay'>THE BAD</div>
@@ -149,6 +150,43 @@ export default function Home() {
             <path d="M97.0449 39.4939C78.7376 46.2032 49.6912 56.6579 31.0826 62.6995C25.4265 64.5359 19.7464 66.2796 14.0053 67.7762C12.8039 68.0894 11.6062 68.3766 10.4024 68.6444C9.87313 68.7622 2.77439 71.5987 3.19095 71.411C10.9363 67.9219 26.5537 62.1481 34.5438 59.0151C46.235 54.4308 57.7669 49.6115 69.2034 44.6703C73.5757 42.7813 77.9363 40.8532 82.4664 39.194C83.215 38.9198 85.4485 38.0858 84.6852 38.3242C80.7739 39.5459 76.8941 40.9935 73.011 42.2919" stroke="#FF3C31" stroke-width="6" stroke-linecap="round"></path>
             <path d="M35.9999 106.606C39.6742 87.4575 46.3566 54.5914 50.7583 35.5283C52.0962 29.734 53.5259 23.9668 55.1988 18.2746C55.5489 17.0835 55.9194 15.9088 56.3096 14.7389C56.4811 14.2246 59.0535 2.65175 58.9999 3.10547C58.0032 11.5417 53.5628 31.9297 52.1348 40.3924C50.0453 52.7753 48.2393 65.1425 46.5868 77.4907C45.9551 82.2116 45.3628 86.9424 44.4528 91.6802" stroke="#FF3C31" stroke-width="6" stroke-linecap="round"></path>
           </svg>
+        </div>
+      </div>
+
+      <div className='flex flex-col mb-96 border-t-2 border-black'>
+        <div className='text-3xl font-PtypeDisplay'>FOUNDERS</div>
+        <div className='flex mb-96'>
+          <CharacterIntro
+            videoSource={'https://player.vimeo.com/progressive_redirect/playback/809160269/rendition/720p/file.mp4?loc=external&signature=fad5e286750ff67b0f674659c18f9a4f7b4b6d544882fa92e837a5e95a79bdef'}
+            title='PRESIDENT'
+            mark='F / 1'
+            firstName='MARC'
+            lastName='DEBIAK'
+            contentHtml={`
+              MARC CO-FOUNDED PAPER TIGER AND OVERSEES OPERATIONS AND ALL NEW BUSINESS DEVELOPMENT.
+              <br />
+              <br />
+              <br />
+              IF YOU’RE INTERESTED IN HIRING US, EMAIL MARC.
+            `}
+          />
+          <CharacterIntro
+            videoSource={'https://player.vimeo.com/progressive_redirect/playback/809160440/rendition/720p/file.mp4?loc=external&signature=13dfbe762fad757d67195c66b0e567b96c1bf6638663c0bada8dd023e2e13bf4'}
+            title='CHIEF CREATIVE OFFICER'
+            mark='F / 2'
+            firstName='JASON'
+            lastName='DEBIAK'
+            contentHtml={`
+              ASON DEBIAK IS THE CHIEF CREATIVE OFFICER AND CO-FOUNDER AT PAPER TIGER.
+              <br />
+              <br />
+              <br />
+              IF YOU’RE LOOKING TO NETWORK
+              OR JOIN OUR TEAM, HIT UP JASON.
+            `}
+            containStyle={{top: '50rem'}}
+            markStyle={{transform : `translate(15rem, -25rem)` }}
+          />
         </div>
       </div>
 
